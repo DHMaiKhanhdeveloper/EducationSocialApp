@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200dp"
+
+                    app:srcCompat="@drawable/top_bcakground" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cir_img"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    app:srcCompat="@drawable/profile" />
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/cir_img"
+                    app:cardBackgroundColor="#EBFEFB"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thông tin tài khoản"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorsetup"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:padding="6dp"
+                            android:text="Họ và Tên"
+                            android:textColor="@color/themeColor"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:background="@drawable/edittext_background"
+                            android:drawableStart="@drawable/user"
+                            android:hint="Nhập họ và tên"
+                            android:padding="10dp"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/tv_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="6dp"
+                            android:text="Nghề nghiệp"
+                            android:textColor="@color/themeColor"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/radio_group_job_setup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_hoc_sinh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Học Sinh"
+                                android:textColor="#555555"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_thay_co"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Thầy/Cô Giáo"
+                                android:textColor="#555555"
+                                android:textSize="14sp" />
+                            <RadioButton
+                                android:id="@+id/radio_gia_su"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Gia Sư"
+                                android:textColor="#555555"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/tv_gioi_tinh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="6dp"
+                            android:text="Giới tính"
+                            android:textColor="@color/themeColor"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_gender_setup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                           android:gravity="center">
+
+                            <RadioButton
+                                android:id="@+id/radio_nam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nam"
+                                android:textColor="#555555"
+                                android:textSize="14sp"
+                                android:layout_marginRight="60dp"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_nu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Nữ"
+                                android:textColor="#555555"
+                                android:textSize="14sp" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:padding="6dp"
+                            android:text="Số điện thoại"
+                            android:textColor="@color/themeColor"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:drawableStart="@drawable/smartphone"
+                            android:hint="Nhập số điện thoại"
+                            android:inputType="phone"
+                            android:padding="10dp"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/imageView3"
+                app:cardBackgroundColor="#EBFEFB"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin trường học"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorsetup"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/tv_truong_hoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="6dp"
+                        android:text="Trường học"
+                        android:textColor="@color/themeColor"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_truong_hoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/edittext_background"
+                        android:drawableStart="@drawable/school"
+                        android:hint="Nhập tên trường học"
+                        android:padding="10dp"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:id="@+id/tv_lop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="6dp"
+                        android:text="Khối lớp"
+                        android:textColor="@color/themeColor"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:id="@+id/edt_lop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@drawable/edittext_background"
+                        android:drawableStart="@drawable/webinar"
+                        android:hint="Nhập khối lớp"
+                        android:padding="10dp"
+                        android:textSize="16dp" />
+                    <Button
+                        android:id="@+id/btn_setup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/background_patientp2"
+                        android:text="Lưu thông tin"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        style="?android:attr/progressBarStyleLarge"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:elevation="10dp"-->
+<!--        android:visibility="gone" />-->
+</RelativeLayout>
