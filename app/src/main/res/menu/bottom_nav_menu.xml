@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Home"
+        android:title="Trang chủ"
+        android:icon="@drawable/home_selector" />
+
+    <item android:id="@+id/Search"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/search_selector" />
+
+    <item android:id="@+id/Add"
+        android:title="Thêm"
+        android:icon="@drawable/add_selector" />
+
+    <item android:id="@+id/Notification"
+        android:title="Thông báo"
+        android:icon="@drawable/notification_selector" />
+
+    <item android:id="@+id/Profile"
+        android:title="Cá nhân"
+        android:icon="@drawable/profile_selector" />
+</menu>
