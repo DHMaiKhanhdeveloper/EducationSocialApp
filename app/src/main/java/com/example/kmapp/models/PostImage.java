@@ -1,13 +1,20 @@
 package com.example.kmapp.models;
 
+import com.google.firebase.firestore.ServerTimestamp;
+
 import java.util.Date;
 
 public class PostImage {
 
     private String imageUrl, id, description, uid;
 
+    //lấy Dấu thời gian của máy chủ từ Firestore trong thiết bị Android?
+    @ServerTimestamp
     private Date timestamp;
 
+    public PostImage(){
+
+    }
 
     public PostImage(String imageUrl, String id, String description, String uid, Date timestamp) {
         this.imageUrl = imageUrl;

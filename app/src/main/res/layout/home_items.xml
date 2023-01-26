@@ -82,35 +82,32 @@
 
     </LinearLayout>
 
-<!--    <TextView-->
-<!--        android:id="@+id/descTv"-->
-<!--        android:text="Account Like"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/linearLayout"-->
-<!--        android:paddingStart="8dp"-->
-<!--        android:paddingEnd="8dp"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textStyle="bold"
+        android:text="description"/>
 
     <TextView
         android:id="@+id/likeCountTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/descTv"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
-        android:layout_below="@+id/linearLayout"
-        android:textStyle="bold" />
-<!--    android:layout_below="@id/descTv"-->
+        android:textStyle="bold"
+        android:text="likeCount"/>
 
-<!--    <TextView-->
-<!--        android:id="@+id/commentTV"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/likeCountTv"-->
-<!--        android:padding="8dp"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:text="View all comment"-->
-<!--        android:visibility="gone" />-->
-
+    <TextView
+        android:id="@+id/commentTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likeCountTv"
+        android:padding="8dp"
+        android:text="View all comment"
+        android:visibility="gone"/>
 </RelativeLayout>

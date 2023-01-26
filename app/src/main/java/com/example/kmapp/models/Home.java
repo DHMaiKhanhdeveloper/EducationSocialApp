@@ -1,17 +1,32 @@
 package com.example.kmapp.models;
 
+import com.google.firebase.firestore.ServerTimestamp;
+
+import java.util.Date;
+import java.util.List;
+
 public class Home {
 
-    private String name,timestamp, profileImage, imageUrl, uid;
-    private int accountlike;
+    private String name, profileImage, imageUrl, uid, description, id;
 
-    public Home(String name, String timestamp, String profileImage, String imageUrl, String uid, int accountlike) {
+    @ServerTimestamp
+    private Date timestamp;
+
+    private List<String> likes;
+
+    public Home() {
+
+    }
+
+    public Home(String name, String profileImage, String imageUrl, String uid, String description, String id, Date timestamp, List<String> likes) {
         this.name = name;
-        this.timestamp = timestamp;
         this.profileImage = profileImage;
         this.imageUrl = imageUrl;
         this.uid = uid;
-        this.accountlike = accountlike;
+        this.description = description;
+        this.id = id;
+        this.timestamp = timestamp;
+        this.likes = likes;
     }
 
     public String getName() {
@@ -20,14 +35,6 @@ public class Home {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
     }
 
     public String getProfileImage() {
@@ -54,11 +61,35 @@ public class Home {
         this.uid = uid;
     }
 
-    public int getAccountlike() {
-        return accountlike;
+    public String getDescription() {
+        return description;
     }
 
-    public void setAccountlike(int accountlike) {
-        this.accountlike = accountlike;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public List<String> getLikes() {
+        return likes;
+    }
+
+    public void setLikes(List<String> likes) {
+        this.likes = likes;
     }
 }

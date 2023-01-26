@@ -33,6 +33,7 @@ android {
 
 dependencies {
 
+    implementation 'com.karumi:dexter:6.2.2'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -40,6 +41,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.1.0'
     implementation 'com.google.firebase:firebase-firestore:24.4.0'
     implementation 'com.google.firebase:firebase-storage:20.1.0'
+
+
 
 //    implementation 'com.google.firebase:firebase-auth:21.1.0'
 //    implementation 'com.google.firebase:firebase-database:20.1.0'
@@ -67,4 +70,7 @@ dependencies {
 //    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta02'
 
     implementation 'com.firebaseui:firebase-ui-firestore:7.1.0'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+
 }

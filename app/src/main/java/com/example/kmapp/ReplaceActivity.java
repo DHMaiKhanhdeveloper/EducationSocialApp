@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import com.example.kmapp.fragments.CreateAccountFragment;
 import com.example.kmapp.fragments.LoginFragment;
 
 public class ReplaceActivity extends AppCompatActivity {
@@ -21,7 +20,12 @@ public class ReplaceActivity extends AppCompatActivity {
 
         frameLayout = findViewById(R.id.frameLayout);
 
-        setFragment(new LoginFragment());
+//        boolean isComment = getIntent().getBooleanExtra("isComment", false);
+//
+//        if (isComment)
+//            setFragment(new CommentFragment());
+//        else
+            setFragment(new LoginFragment());
     }
     public void setFragment(Fragment fragment){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -30,7 +34,19 @@ public class ReplaceActivity extends AppCompatActivity {
 //        if (fragment instanceof CreateAccountFragment) {
 //            fragmentTransaction.addToBackStack(null);
 //        }
-        fragmentTransaction.addToBackStack(null);
+
+//        if (fragment instanceof CommentFragment){
+//
+//            String id = getIntent().getStringExtra("id");
+//            String uid = getIntent().getStringExtra("uid");
+//
+//            Bundle bundle = new Bundle();
+//            bundle.putString("id", id);
+//            bundle.putString("uid", uid);
+//            fragment.setArguments(bundle);
+//        }
+
+//        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.replace(frameLayout.getId(), fragment);
         fragmentTransaction.commit();
 

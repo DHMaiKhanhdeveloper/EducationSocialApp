@@ -45,7 +45,9 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.firestore.FirebaseFirestore;
 //import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -62,6 +64,10 @@ public class CreateAccountFragment extends Fragment {
     private UtilService utilService;
     private boolean passwordVisible;
     private FirebaseAuth mAuth;
+
+    public CreateAccountFragment() {
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -231,13 +237,13 @@ public class CreateAccountFragment extends Fragment {
                     FirebaseUser user = mAuth.getCurrentUser();
                     String image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwp--EwtYaxkfsSPIpoSPucdbxAo6PancQX1gw6ETSKI6_pGNCZY4ts1N6BV5ZcN3wPbA&usqp=CAU";
 
-//                    UserProfileChangeRequest.Builder request = new UserProfileChangeRequest.Builder();
-//                    request.setDisplayName(name);
-//                    request.setPhotoUri(Uri.parse(image));
+                    UserProfileChangeRequest.Builder request = new UserProfileChangeRequest.Builder();
+                    request.setDisplayName(name);
+                    request.setPhotoUri(Uri.parse(image));
 //
-//                    user.updateProfile(request.build());
+                    user.updateProfile(request.build());
 
-                    assert user != null;
+
                     user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
@@ -282,14 +288,20 @@ public class CreateAccountFragment extends Fragment {
     }
 
     private void uploadUser(FirebaseUser user, String name, String email) {
+
+        List<Object> list = new ArrayList<>();
+        List<Object> list1 = new ArrayList<>();
+
         Map<String, Object> map = new HashMap<>();
         map.put("name", name);
         map.put("email", email);
         map.put("profileImage", " ");
         map.put("uid", user.getUid());
-        map.put("following", 0);
-        map.put("followers", 0);
         map.put("status", " ");
+        map.put("search", name.toLowerCase());
+
+        map.put("followers", list );
+        map.put("following", list1 );
         FirebaseFirestore.getInstance().collection("Users").document(user.getUid())
                 .set(map)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

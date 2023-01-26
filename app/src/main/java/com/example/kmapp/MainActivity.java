@@ -29,13 +29,15 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchFragment.OnDataPass {
 
 
     private ViewPager2 viewPager2;
     private ViewPagerAdapter viewPagerAdapter;
     private BottomNavigationView bottomNavigationView;
     private Fragment fragment;
+    public static String USER_ID;
+    public static boolean IS_SEARCHED_USER = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         });
         bottomNavigationView.setItemIconTintList(null);
 
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -140,7 +143,38 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-//    private void loadFragment(Fragment fragment) {
+
+    private Bitmap loadProfileImage(String directory) {
+
+        try {
+            File file = new File(directory, "profile.png");
+
+            return BitmapFactory.decodeStream(new FileInputStream(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
+    @Override
+    public void onChange(String uid) {
+        USER_ID = uid;
+        IS_SEARCHED_USER = true;
+        viewPager2.setCurrentItem(4);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (viewPager2.getCurrentItem() == 4){
+            viewPager2.setCurrentItem(0);
+            IS_SEARCHED_USER = false;}
+         else
+            super.onBackPressed();
+    }
+
+    //    private void loadFragment(Fragment fragment) {
 //        // load fragment
 //        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 //        transaction.replace(R.id.main_view_pager, fragment);
