@@ -237,11 +237,11 @@ public class CreateAccountFragment extends Fragment {
                     FirebaseUser user = mAuth.getCurrentUser();
                     String image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwp--EwtYaxkfsSPIpoSPucdbxAo6PancQX1gw6ETSKI6_pGNCZY4ts1N6BV5ZcN3wPbA&usqp=CAU";
 
-                    UserProfileChangeRequest.Builder request = new UserProfileChangeRequest.Builder();
-                    request.setDisplayName(name);
-                    request.setPhotoUri(Uri.parse(image));
-//
-                    user.updateProfile(request.build());
+//                    UserProfileChangeRequest.Builder request = new UserProfileChangeRequest.Builder();
+//                    request.setDisplayName(name);
+//                    request.setPhotoUri(Uri.parse(image));
+////
+//                    user.updateProfile(request.build());
 
 
                     user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -300,8 +300,11 @@ public class CreateAccountFragment extends Fragment {
         map.put("status", " ");
         map.put("search", name.toLowerCase());
 
-        map.put("followers", list );
-        map.put("following", list1 );
+//        map.put("followers", 0 );
+//        map.put("following", 0);
+
+        map.put("followers", list);
+       map.put("following", list1);
         FirebaseFirestore.getInstance().collection("Users").document(user.getUid())
                 .set(map)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

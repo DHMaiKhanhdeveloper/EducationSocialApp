@@ -155,21 +155,21 @@ public class ProfileFragment extends Fragment {
 
     private void loadData() {
 
-//        myRef.addSnapshotListener((value, error) -> {
-//
-//            if (error != null) {
-//                Log.e("Tag_b", error.getMessage());
-//                return;
-//            }
-//
-//            if (value == null || !value.exists()) {
-//                return;
-//            }
-//
-//            followingList_2 = (List<String>) value.get("following");
-//
-//
-//        });
+        myRef.addSnapshotListener((value, error) -> {
+
+            if (error != null) {
+                Log.e("Tag_b", error.getMessage());
+                return;
+            }
+
+            if (value == null || !value.exists()) {
+                return;
+            }
+
+            followingList_2 = (List<String>) value.get("following");
+
+
+        });
 
     }
 
@@ -251,6 +251,31 @@ public class ProfileFragment extends Fragment {
     }
 
     private void clickListener() {
+
+
+        followBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isFollowed) {
+                    followersList.remove(user.getUid()); //opposite user
+
+                    followingList_2.remove(userUID); //us
+
+                    final Map<String, Object> map_2 = new HashMap<>();
+                    map_2.put("following", followingList_2);
+                }else{
+
+                    followersList.add(user.getUid());
+
+                    followingList_2.add(userUID); //us
+
+                    final Map<String, Object> map_2 = new HashMap<>();
+                    map_2.put("following", followingList_2);
+                }
+            }
+        });
+
+
 
 //        followBtn.setOnClickListener(v -> {
 //
@@ -413,47 +438,7 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-//        reference.putFile(uri)
-//                .addOnCompleteListener(task -> {
-//
-//                    if (task.isSuccessful()) {
-//
-//                        reference.getDownloadUrl()
-//                                .addOnSuccessListener(uri1 -> {
-//                                    String imageURL = uri1.toString();
-//
-//                                    UserProfileChangeRequest.Builder request = new UserProfileChangeRequest.Builder();
-//                                    request.setPhotoUri(uri1);
-//
-//                                    user.updateProfile(request.build());
-//
-//                                    Map<String, Object> map = new HashMap<>();
-//                                    map.put("profileImage", imageURL);
-//
-//                                    FirebaseFirestore.getInstance().collection("Users")
-//                                            .document(user.getUid())
-//                                            .update(map).addOnCompleteListener(task1 -> {
-//
-//                                                if (task1.isSuccessful())
-//                                                    Toast.makeText(getContext(),
-//                                                            "Updated Successful", Toast.LENGTH_SHORT).show();
-//                                                else {
-//                                                    assert task1.getException() != null;
-//                                                    Toast.makeText(getContext(),
-//                                                            "Error: " + task1.getException().getMessage(),
-//                                                            Toast.LENGTH_SHORT).show();
-//                                                }
-//                                            });
-//
-//                                });
-//
-//                    } else {
-//                        assert task.getException() != null;
-//                        Toast.makeText(getContext(), "Error: " + task.getException().getMessage(),
-//                                Toast.LENGTH_SHORT).show();
-//                    }
-//
-//                });
+
     }
 
     private void loadBasicData() {
@@ -470,17 +455,21 @@ public class ProfileFragment extends Fragment {
                 if (value.exists()){
                     String name = value.getString("name");
                     String status = value.getString("status");
+
+//                    int followers = value.getLong("followers").intValue();
+//                    int following = value.getLong("following").intValue();
+                    followersList = (List<String>) value.getDate("followers");
+                    followingList = (List<String>) value.getDate("following");
+
                     final String profileURL = value.getString("profileImage");
-
-
-
 
                     tvName.setText(name);
                     tvToolbarName.setText(name);
                     tvStatus.setText(status);
                     tvFollowersCount.setText(String.valueOf("" + followersList.size()));
                     tvFollowingCount.setText(String.valueOf("" + followingList.size()));
-
+//                    tvFollowersCount.setText(String.valueOf(followers));
+//                    tvFollowersCount.setText(String.valueOf(following));
                     try {
                         Glide.with(getContext().getApplicationContext())
                                 .load(profileURL)
@@ -528,81 +517,7 @@ public class ProfileFragment extends Fragment {
         });
 
 
-//        userRef.addSnapshotListener((value, error) -> {
-//
-//            if (error != null) {
-//                Log.e("Tag_0", error.getMessage());
-//                return;
-//            }
-//
-//            assert value != null;
-//            if (value.exists()) {
-//
-//                String name = value.getString("name");
-//                String status = value.getString("status");
-//
-//                final String profileURL = value.getString("profileImage");
-//
-//                tvName.setText(name);
-//                tvToolbarName.setText(name);
-//                tvStatus.setText(status);
-//
-//                followersList = (List<String>) value.get("followers");
-//                followingList = (List<String>) value.get("following");
-//
-//
-//                tvFollowersCount.setText("" + followersList.size());
-//                tvFollowingCount.setText("" + followingList.size());
-//
-//                try {
-//
-//                    assert getContext() != null;
-//
-//                    Glide.with(getContext().getApplicationContext())
-//                            .load(profileURL)
-//                            .placeholder(R.drawable.ic_person)
-//                            .circleCrop()
-//                            .listener(new RequestListener<Drawable>() {
-//                                @Override
-//                                public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
-//                                    return false;
-//                                }
-//
-//                                @Override
-//                                public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
-//
-//                                    Bitmap bitmap = ((BitmapDrawable) resource).getBitmap();
-//                                    storeProfileImage(bitmap, profileURL);
-//                                    return false;
-//                                }
-//                            })
-//                            .timeout(6500)
-//                            .into(cimgProfileImage);
-//
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//
-//
-//                if (followersList.contains(user.getUid())) {
-//                    followBtn.setText("UnFollow");
-//                    isFollowed = true;
-//                    btnStartChat.setVisibility(View.VISIBLE);
-//
-//
-//                } else {
-//                    isFollowed = false;
-//                    followBtn.setText("Follow");
-//
-//                    btnStartChat.setVisibility(View.GONE);
-//
-//                }
-//
-//
-//            }
-//
-//        });
+
 
     }
 

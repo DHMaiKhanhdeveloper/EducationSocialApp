@@ -261,6 +261,11 @@ public class HomeFragment extends Fragment {
                 return;
             }
 
+            if (value == null)
+                    return;
+
+            list.clear();
+
 
                 for (QueryDocumentSnapshot snapshot : value) {
 

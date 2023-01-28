@@ -38,7 +38,7 @@ public class SearchFragment extends Fragment {
     private RecyclerView recyclerView;
     private UserAdapter adapter;
     private CollectionReference reference;
-//    private OnDataPass onDataPass;
+
     OnDataPass onDataPass;
     private List<Users> list;
 
@@ -117,6 +117,7 @@ public class SearchFragment extends Fragment {
             public boolean onQueryTextChange(String newText) {
                 if (newText.equals(""))
                     loadUserData();
+
                 return false;
             }
         });

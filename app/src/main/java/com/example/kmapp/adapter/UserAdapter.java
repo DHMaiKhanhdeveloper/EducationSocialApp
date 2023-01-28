@@ -79,6 +79,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder>{
             @Override
             public void onClick(View v) {
                 onUserClicked.onClicked(list.get(holder.getAdapterPosition()).getUid());
+
             }
         });
     }
