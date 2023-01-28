@@ -39,5 +39,20 @@ public class SplashActivity extends AppCompatActivity {
                 finish ();
             }
         },1500 );
+
+//        new Handler(  ).postDelayed (new Runnable () {
+//            @Override
+//            public void run() {
+//                if (user !=null)
+//                {
+//                    startActivity ( new Intent( SplashActivity.this,HomeActivity.class ) );
+//                }
+//                else
+//                {
+//                    startActivity ( new Intent ( SplashActivity.this,Login.class ) );
+//                }
+//                finish ();
+//            }
+//        },1500 );
     }
 }
