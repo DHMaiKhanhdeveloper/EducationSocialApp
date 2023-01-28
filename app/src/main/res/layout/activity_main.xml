@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1694CD"
+    tools:context="com.example.SocialMedia1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee_shade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Memer's Adda"
+        android:textColor="#FFEB3B"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/edittext"
+            android:padding="9dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:fontFamily="@font/montserrat"
+            android:maxLength="25"
+            android:id="@+id/username"
+            android:drawableStart="@drawable/ic_baseline_user"
+            android:drawablePadding="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Memer name"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp"
+            android:padding="9dp"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:id="@+id/memer"
+            android:drawableStart="@drawable/ic_baseline_memer"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:fontFamily="@font/montserrat"
+            android:padding="9dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:drawablePadding="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp"
+            android:padding="9dp"
+            android:hint="Password"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:drawableStart="@drawable/ic_baseline_password"
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/buttons"
+            android:minWidth="120dp"
+            android:textAllCaps="false"
+            android:id="@+id/signUp"
+            android:fontFamily="@font/montserrat"/>
+
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Already have a account ? Sign in here"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

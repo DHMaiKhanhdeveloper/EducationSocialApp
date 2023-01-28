@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Following"
+        android:icon="@drawable/ic_following"
+        android:id="@+id/following"
+        />
+    <item
+        android:title="Feed"
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_feed"/>
+    <item
+        android:title="Favourites"
+        android:icon="@drawable/ic_favourite"
+        android:id="@+id/fav"/>
+
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"/>
+</menu>

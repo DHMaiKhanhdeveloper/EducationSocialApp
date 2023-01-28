@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/edittext"
+       android:id="@+id/relative"
+       >
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_margin="5dp"
+           android:src="@drawable/profile_image"
+           app:civ_border_color="@android:color/black"
+           app:civ_border_width="0.5dp"
+           android:scaleType="centerCrop"
+           android:id="@+id/profile_image"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Username"
+           android:layout_toEndOf="@id/profile_image"
+           android:layout_marginTop="10dp"
+           android:fontFamily="@font/montserrat"
+           android:textSize="15sp"
+           android:textStyle="bold"
+           android:textColor="@android:color/black"
+           android:id="@+id/username"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Date"
+           android:textSize="13sp"
+           android:fontFamily="@font/montserrat"
+           android:layout_below="@id/username"
+           android:layout_toEndOf="@id/profile_image"
+           android:id="@+id/date"/>
+
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_options"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:id="@+id/options"/>
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/relative"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_image"
+            android:scaleType="fitCenter"
+            />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:padding="5dp"
+           android:background="@drawable/edittext"
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_like"
+               android:id="@+id/like"
+               android:visibility="visible"
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_liked"
+               android:id="@+id/liked"
+               android:visibility="gone"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:fontFamily="@font/montserrat"
+               android:layout_toEndOf="@+id/like"
+               android:textSize="16dp"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="5dp"
+               android:id="@+id/likes_count"/>
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_comment"
+               android:layout_toEndOf="@id/likes_count"
+               android:layout_centerVertical="true"
+               android:layout_marginTop="4dp"
+               android:layout_marginStart="20dp"
+               android:id="@+id/comments"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/comments_count"
+               android:text=""
+               android:layout_toEndOf="@id/comments"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="5dp"
+               android:fontFamily="@font/montserrat"
+               android:textSize="16dp"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_share"
+               android:layout_toEndOf="@id/comments_count"
+               android:layout_marginStart="20sp"
+               android:id="@+id/share"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_save"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:id="@+id/save"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_saved"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:id="@+id/saved"
+               android:visibility="gone"/>
+
+
+
+
+       </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memer"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="4dp"
+            android:id="@+id/memer"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginStart="4dp"
+            android:textSize="13sp"
+            android:id="@+id/description"
+            android:fontFamily="@font/montserrat"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/darker_gray"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

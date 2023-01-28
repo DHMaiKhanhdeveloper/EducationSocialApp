@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="@android:color/holo_blue_bright"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile_image"
+                app:civ_border_color="#fff"
+                app:civ_border_width="1.5dp"
+                android:id="@+id/profile_image"
+                android:layout_marginTop="15dp"
+              />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@id/profile_image"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="memer"
+                android:textSize="13sp"
+                android:textColor="#393333"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:id="@+id/memer"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="22sp"
+                android:layout_below="@id/memer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Follow"
+                android:minWidth="99dp"
+                android:id="@+id/btn_follow"
+                android:background="@drawable/edit"
+                android:layout_marginEnd="5dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="22sp"
+                android:layout_below="@id/memer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Following"
+                android:visibility="gone"
+                android:minWidth="99dp"
+                android:id="@+id/btn_following"
+                android:background="#6EBA17"
+                android:layout_marginEnd="5dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

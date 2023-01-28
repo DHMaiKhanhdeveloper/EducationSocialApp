@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.SocialMedia1.Fragments.FollowingFragment">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:id="@+id/toolbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#1f97b8"
+                android:src="@drawable/profile_image"
+                android:layout_margin="1.5dp"
+                android:id="@+id/profile_image"
+                android:layout_alignParentStart="true"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_post"
+                    android:id="@+id/post_one"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:id="@+id/search"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_notifications"
+                        android:id="@+id/note"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_notifications_active"
+                        android:id="@+id/active"
+                        android:visibility="gone"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/recyclerView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No posts"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerInParent="true"
+        android:id="@+id/no"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover users"
+        android:background="@drawable/buttons"
+        android:minWidth="149dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/discover"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

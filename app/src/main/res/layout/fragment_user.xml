@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.SocialMedia1.Fragments.UserFragment">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textSize="18sp"
+        android:minWidth="150dp"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/btn_update"
+        android:background="#1694CD"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:text="Update Background"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textSize="18sp"
+        android:minWidth="200dp"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/update_bg"
+        android:background="#1694CD"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_green_dark"
+        android:scaleType="centerCrop"
+        android:id="@+id/background"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/background"
+        android:layout_marginTop="-35dp"
+        android:elevation="5dp"
+        android:id="@+id/upload_background"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@android:color/holo_red_dark"
+        android:layout_below="@id/background"
+        android:layout_marginTop="-25dp"
+        android:id="@+id/card"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image"
+            android:id="@+id/profile_image"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/card"
+        android:layout_below="@id/background"
+        android:layout_margin="10dp"
+        android:id="@+id/relative"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/following"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_toEndOf="@id/following"
+            android:layout_marginStart="20dp"
+            android:id="@+id/followers"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_below="@id/following"
+            android:layout_marginStart="60dp"
+            android:id="@+id/following_count"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_toEndOf="@id/following_count"
+            android:layout_below="@id/followers"
+            android:textSize="15sp"
+            android:id="@+id/followers_count"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="90dp"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="27sp"
+        android:layout_below="@id/relative"
+        android:layout_alignParentEnd="true"
+        android:text="settings"
+        android:layout_marginTop="5dp"
+        android:minWidth="99dp"
+        android:layout_marginEnd="75dp"
+        android:id="@+id/settings"
+        android:background="@drawable/edit"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="Username"
+                android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memer name"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/memer"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/logout"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/relative1"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posts (24)"
+            android:fontFamily="@font/montserrat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/posts"/>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

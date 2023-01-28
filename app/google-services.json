@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491233908227",
+    "project_id": "kmeducation-c953e",
+    "storage_bucket": "kmeducation-c953e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491233908227:android:153013112b21983b492036",
+        "android_client_info": {
+          "package_name": "com.example.SocialMedia1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491233908227-urhsp1d1545crtoeo3tbb674ufl36u1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.SocialMedia1",
+            "certificate_hash": "20f4ed571d03299c600a922104a14570a25bed4a"
+          }
+        },
+        {
+          "client_id": "491233908227-0gp698unb11f4lf3m2jlp84tc0t38bi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTudiIKF8c70KpeZrOzYZ1ZAZt-OwgHJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491233908227-0gp698unb11f4lf3m2jlp84tc0t38bi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

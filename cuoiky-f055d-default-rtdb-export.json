@@ -1,0 +1,370 @@
+{
+  "Comments": {
+    "-N2Mwwo77NU2H6Yx9Jeb": {
+      "-N2MzpJFBLY-JNqqAzrj": {
+        "comment": "hello",
+        "publisher": "IfGjHIlSVAab3t9rRjG4izEqz8B2",
+        "time": "18-5-2022 11:27 CH"
+      }
+    },
+    "-N2N-1VkZkJjIqD-3aMT": {
+      "-N2UjwXyTfVjkVJWyy2i": {
+        "comment": "Hellooooo",
+        "publisher": "pifByhTLVnQP3zXjK0fst3MW3bp2",
+        "time": "20-5-2022 11:35 SA"
+      }
+    },
+    "-N2U0z6FyKbIe6KNiHco": {
+      "-N2U1GcjxB5ccSidzsvz": {
+        "comment": "Hello",
+        "publisher": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82",
+        "time": "20-5-2022 08:15 SA"
+      }
+    }
+  },
+  "Favourites": {
+    "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": {
+      "-N2N-1VkZkJjIqD-3aMT": true,
+      "-N2U0z6FyKbIe6KNiHco": true
+    },
+    "IfGjHIlSVAab3t9rRjG4izEqz8B2": {
+      "-N2UjkBC32TPxzAiZDYc": true
+    },
+    "pifByhTLVnQP3zXjK0fst3MW3bp2": {
+      "-N2Mwwo77NU2H6Yx9Jeb": true
+    }
+  },
+  "Follow": {
+    "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": {
+      "followers": {
+        "IfGjHIlSVAab3t9rRjG4izEqz8B2": true,
+        "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": true,
+        "pifByhTLVnQP3zXjK0fst3MW3bp2": true
+      },
+      "following": {
+        "IfGjHIlSVAab3t9rRjG4izEqz8B2": true,
+        "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": true
+      }
+    },
+    "IfGjHIlSVAab3t9rRjG4izEqz8B2": {
+      "followers": {
+        "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+        "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": true,
+        "pifByhTLVnQP3zXjK0fst3MW3bp2": true
+      },
+      "following": {
+        "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+        "pifByhTLVnQP3zXjK0fst3MW3bp2": true
+      }
+    },
+    "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": {
+      "followers": {
+        "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true
+      },
+      "following": {
+        "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+        "IfGjHIlSVAab3t9rRjG4izEqz8B2": true
+      }
+    },
+    "pifByhTLVnQP3zXjK0fst3MW3bp2": {
+      "followers": {
+        "IfGjHIlSVAab3t9rRjG4izEqz8B2": true
+      },
+      "following": {
+        "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+        "IfGjHIlSVAab3t9rRjG4izEqz8B2": true
+      }
+    }
+  },
+  "Likes": {
+    "-N2Mwwo77NU2H6Yx9Jeb": {
+      "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+      "IfGjHIlSVAab3t9rRjG4izEqz8B2": true
+    },
+    "-N2N-1VkZkJjIqD-3aMT": {
+      "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+      "pifByhTLVnQP3zXjK0fst3MW3bp2": true
+    },
+    "-N2U0z6FyKbIe6KNiHco": {
+      "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": true,
+      "pifByhTLVnQP3zXjK0fst3MW3bp2": true
+    },
+    "-N2UjkBC32TPxzAiZDYc": {
+      "IfGjHIlSVAab3t9rRjG4izEqz8B2": true
+    }
+  },
+  "Notifications": {
+    "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": {
+      "-N2Mwq2BOtj7E5eBxLWb": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2MwyUFmDkddu1LyuuS": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2MzTsvXSBdcVgreibu": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2MzU_5PQ0vroMdDWDz": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2MzjcZ77Gtzmy20GFU": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "IfGjHIlSVAab3t9rRjG4izEqz8B2"
+      },
+      "-N2MzoBoXt-XxqmVtAWY": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "IfGjHIlSVAab3t9rRjG4izEqz8B2"
+      },
+      "-N2MzpJFBLY-JNqqAzrk": {
+        "comment": "Commented: hello",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "IfGjHIlSVAab3t9rRjG4izEqz8B2"
+      },
+      "-N2N-MHt6WnpTbOms1fw": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "WXtRUTVhHigCgyqbn7kuJ5mv4eB3"
+      },
+      "-N2PHM89N9fpela9Pfux": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2PHQ9SuC5EswUz-l2i": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2PHuke8rw81Y19Fl9l": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2Tx7NO9Y5BgvSNB4xM": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+        "userid": "IfGjHIlSVAab3t9rRjG4izEqz8B2"
+      },
+      "-N2UjzUMTWeQZKTMjh2D": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "pifByhTLVnQP3zXjK0fst3MW3bp2"
+      }
+    },
+    "IfGjHIlSVAab3t9rRjG4izEqz8B2": {
+      "-N2N-MOtakByDP3YkErR": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "WXtRUTVhHigCgyqbn7kuJ5mv4eB3"
+      },
+      "-N2PHMFlxsfUL41Y-okv": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2SUFYjvxSJfju3K__r": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2SUaWHLR5QByJpip7B": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2N-1VkZkJjIqD-3aMT",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2U18VcA07bka18mRuQ": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2U1Gck1o1sM1hUC18A": {
+        "comment": "Commented: Hello",
+        "ispost": true,
+        "postid": "-N2U0z6FyKbIe6KNiHco",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2U1I8emg4JCeRjwrUY": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2U0z6FyKbIe6KNiHco",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2Ujph_5yyS0lAFc6fH": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "pifByhTLVnQP3zXjK0fst3MW3bp2"
+      },
+      "-N2UjuEYQomzSZ3KHmad": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2N-1VkZkJjIqD-3aMT",
+        "userid": "pifByhTLVnQP3zXjK0fst3MW3bp2"
+      },
+      "-N2UjuyVn8rKECRFRH0n": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2U0z6FyKbIe6KNiHco",
+        "userid": "pifByhTLVnQP3zXjK0fst3MW3bp2"
+      },
+      "-N2UjwXyTfVjkVJWyy2j": {
+        "comment": "Commented: Hellooooo",
+        "ispost": true,
+        "postid": "-N2N-1VkZkJjIqD-3aMT",
+        "userid": "pifByhTLVnQP3zXjK0fst3MW3bp2"
+      }
+    },
+    "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": {
+      "-N2PHMcajFW93aRn7zya": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      },
+      "-N2SUFoHMx_fhq5XLlUE": {
+        "comment": "started following you",
+        "ispost": false,
+        "postid": "",
+        "userid": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82"
+      }
+    },
+    "pifByhTLVnQP3zXjK0fst3MW3bp2": {
+      "-N2UkOmilfGZSEk1EuWj": {
+        "comment": "liked your post",
+        "ispost": true,
+        "postid": "-N2UjkBC32TPxzAiZDYc",
+        "userid": "IfGjHIlSVAab3t9rRjG4izEqz8B2"
+      }
+    }
+  },
+  "Posts": {
+    "-N2Mwwo77NU2H6Yx9Jeb": {
+      "counterPost": 0,
+      "date": "18-5-2022 11:15 CH",
+      "description": "Firts Post",
+      "memer": "@thanh",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1652890516684.jpg?alt=media&token=da4f077b-b9e8-4f17-8142-d25d708ac5cf",
+      "postid": "-N2Mwwo77NU2H6Yx9Jeb",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "publisher": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82",
+      "username": "thanh"
+    },
+    "-N2N-1VkZkJjIqD-3aMT": {
+      "counterPost": 1,
+      "date": "18-5-2022 11:28 CH",
+      "description": "seccond post",
+      "memer": "@thanh1",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1652891320392.jpg?alt=media&token=38b3d95a-1133-4b69-a6c0-9447395e091d",
+      "postid": "-N2N-1VkZkJjIqD-3aMT",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "publisher": "IfGjHIlSVAab3t9rRjG4izEqz8B2",
+      "username": "thanh1"
+    },
+    "-N2PI1v1pOQoruZyY4nn": {
+      "counterPost": 2,
+      "date": "19-5-2022 10:11 SA",
+      "description": "third post",
+      "memer": "@thanh",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1652929862781.jpg?alt=media&token=3ba4fd31-5a13-4341-b9f3-a24a03e42d68",
+      "postid": "-N2PI1v1pOQoruZyY4nn",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "publisher": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82",
+      "username": "thanh"
+    },
+    "-N2TeCAlIHxtP5aNcJjH": {
+      "counterPost": 3,
+      "date": "20-5-2022 06:30 SA",
+      "description": "Hello",
+      "memer": "@thanh",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1653003043697.jpg?alt=media&token=ccc04004-989c-4f87-8516-aa8a67c2fbfe",
+      "postid": "-N2TeCAlIHxtP5aNcJjH",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "publisher": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82",
+      "username": "thanh"
+    },
+    "-N2U0z6FyKbIe6KNiHco": {
+      "counterPost": 4,
+      "date": "20-5-2022 08:14 SA",
+      "description": "CuoiKy",
+      "memer": "@thanh1",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1653009273263.jpg?alt=media&token=2931c8c5-e6e8-4775-afa3-06f5f83bbab8",
+      "postid": "-N2U0z6FyKbIe6KNiHco",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "publisher": "IfGjHIlSVAab3t9rRjG4izEqz8B2",
+      "username": "thanh1"
+    },
+    "-N2UjkBC32TPxzAiZDYc": {
+      "counterPost": 5,
+      "date": "20-5-2022 11:34 SA",
+      "description": "Hello. First Porst",
+      "memer": "@truongthanh",
+      "postImage": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Posts%2F1653021275748.jpg?alt=media&token=0930a7c8-b06d-41a2-97b6-afd271f88ebb",
+      "postid": "-N2UjkBC32TPxzAiZDYc",
+      "profile": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Profiles%2FpifByhTLVnQP3zXjK0fst3MW3bp2.null?alt=media&token=0fc80b20-c489-4cfe-bea8-fb9e72c29f51",
+      "publisher": "pifByhTLVnQP3zXjK0fst3MW3bp2",
+      "username": "truongthanh"
+    }
+  },
+  "Users": {
+    "0OuyvTQeVwdMZFV6Ub1dkQWFRd82": {
+      "background": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/download.jpg?alt=media&token=143d5e9d-c652-465d-b513-6ee75537ad11",
+      "email": "ptclone11@gmail.com",
+      "memer": "@thanh",
+      "profileUrl": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "user_id": "0OuyvTQeVwdMZFV6Ub1dkQWFRd82",
+      "username": "thanh"
+    },
+    "IfGjHIlSVAab3t9rRjG4izEqz8B2": {
+      "background": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/download.jpg?alt=media&token=143d5e9d-c652-465d-b513-6ee75537ad11",
+      "email": "ptclone12@gmail.com",
+      "memer": "@thanh1",
+      "profileUrl": "https://firebasestorage.googleapis.com/v0/b/signin-function.appspot.com/o/user.svg?alt=media&token=561ed6be-db1a-4068-8023-15904ed28796",
+      "user_id": "IfGjHIlSVAab3t9rRjG4izEqz8B2",
+      "username": "thanh1"
+    },
+    "WXtRUTVhHigCgyqbn7kuJ5mv4eB3": {
+      "background": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Backgrounds%2FWXtRUTVhHigCgyqbn7kuJ5mv4eB3.null?alt=media&token=d204f91a-9026-423c-bee2-24343e699ae5",
+      "email": "ptclone13@gmail.com",
+      "memer": "@thanh2",
+      "profileUrl": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Profiles%2FWXtRUTVhHigCgyqbn7kuJ5mv4eB3.null?alt=media&token=b6d62bd2-e8c5-404a-bfd3-a16601a70c76",
+      "user_id": "WXtRUTVhHigCgyqbn7kuJ5mv4eB3",
+      "username": "thanh2"
+    },
+    "pifByhTLVnQP3zXjK0fst3MW3bp2": {
+      "background": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Backgrounds%2FpifByhTLVnQP3zXjK0fst3MW3bp2.null?alt=media&token=0a813582-8bb9-441b-8594-68c072c6f8a0",
+      "email": "ptclone20@gmail.com",
+      "memer": "@truongthanh",
+      "profileUrl": "https://firebasestorage.googleapis.com/v0/b/cuoiky-f055d.appspot.com/o/Profiles%2FpifByhTLVnQP3zXjK0fst3MW3bp2.null?alt=media&token=0fc80b20-c489-4cfe-bea8-fb9e72c29f51",
+      "user_id": "pifByhTLVnQP3zXjK0fst3MW3bp2",
+      "username": "truongthanh"
+    }
+  }
+}
