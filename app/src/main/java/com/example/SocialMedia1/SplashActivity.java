@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.SocialMedia1.activity.HomeActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -30,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 if (user !=null)
                 {
-                    startActivity ( new Intent( SplashActivity.this,HomeActivity.class ) );
+                    startActivity ( new Intent( SplashActivity.this, HomeActivity.class ) );
                 }
                 else
                 {
@@ -40,19 +41,6 @@ public class SplashActivity extends AppCompatActivity {
             }
         },1500 );
 
-//        new Handler(  ).postDelayed (new Runnable () {
-//            @Override
-//            public void run() {
-//                if (user !=null)
-//                {
-//                    startActivity ( new Intent( SplashActivity.this,HomeActivity.class ) );
-//                }
-//                else
-//                {
-//                    startActivity ( new Intent ( SplashActivity.this,Login.class ) );
-//                }
-//                finish ();
-//            }
-//        },1500 );
+
     }
 }

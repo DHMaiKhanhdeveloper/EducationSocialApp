@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.SocialMedia1.Adapter.SearchAdapter;
 import com.example.SocialMedia1.Model.Data;
+import com.example.SocialMedia1.activity.HomeActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -149,6 +150,6 @@ public class SearchUsers extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(SearchUsers.this,HomeActivity.class));
+        startActivity(new Intent(SearchUsers.this, HomeActivity.class));
     }
 }

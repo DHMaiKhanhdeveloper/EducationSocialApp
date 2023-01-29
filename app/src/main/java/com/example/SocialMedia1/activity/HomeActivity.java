@@ -1,4 +1,4 @@
-package com.example.SocialMedia1;
+package com.example.SocialMedia1.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

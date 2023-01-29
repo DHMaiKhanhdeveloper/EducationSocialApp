@@ -1,4 +1,4 @@
-package com.example.SocialMedia1;
+package com.example.SocialMedia1.application;
 
 import android.app.Application;
 

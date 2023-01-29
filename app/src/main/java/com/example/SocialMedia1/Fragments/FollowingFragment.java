@@ -18,9 +18,9 @@ import android.widget.Toast;
 
 import com.example.SocialMedia1.Adapter.PostAdapter;
 import com.example.SocialMedia1.Model.Posts;
-import com.example.SocialMedia1.NotificationActivity;
+import com.example.SocialMedia1.activity.NotificationActivity;
 import com.example.SocialMedia1.OthersProfile;
-import com.example.SocialMedia1.PostActivity;
+import com.example.SocialMedia1.activity.PostActivity;
 import SocialMedia1.R;
 import com.example.SocialMedia1.SearchUsers;
 import com.google.firebase.auth.FirebaseAuth;

@@ -20,7 +20,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.SocialMedia1.CommentActivity;
+import com.example.SocialMedia1.activity.CommentActivity;
 import com.example.SocialMedia1.Model.Posts;
 import com.example.SocialMedia1.OthersProfile;
 import SocialMedia1.R;

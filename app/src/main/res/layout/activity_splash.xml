@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1694CD"
+    android:background="@drawable/background_splashscreen"
+    style="@style/BottomAppBar"
     tools:context="com.example.SocialMedia1.SplashActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="263dp"
+        android:layout_height="148dp"
+        android:src="@drawable/education"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
 
-    <TextView
+
+    <com.example.SocialMedia1.custom_fonts.TheBombTextView
+        android:id="@+id/layout"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="KMEDUCATION"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_layer_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Meme's Adda"
-        android:textSize="35sp"
-        android:fontFamily="@font/bungee_shade"
-        android:layout_centerInParent="true"
-        android:textColor="#FFEB3B"
-        android:background="#092BE4"
-        android:minWidth="330dp"
-        android:gravity="center"/>
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_rawRes="@raw/splash" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</RelativeLayout>

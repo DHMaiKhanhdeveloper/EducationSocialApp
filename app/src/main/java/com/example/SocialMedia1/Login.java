@@ -9,9 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.SocialMedia1.activity.HomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,7 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 import SocialMedia1.R;
 
 public class Login extends AppCompatActivity {
-    Button sign;
+    LinearLayout sign;
     GoogleSignInClient googleSignInClient;
     TextView goToSignUp;
 
@@ -83,7 +85,7 @@ public class Login extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful())
                             {
-                                startActivity(new Intent(Login.this,HomeActivity.class));
+                                startActivity(new Intent(Login.this, HomeActivity.class));
                                 Toast.makeText(Login.this, "Login success...", Toast.LENGTH_SHORT).show();
                                 progressDialog.dismiss();
                             }else
