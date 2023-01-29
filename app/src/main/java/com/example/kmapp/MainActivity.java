@@ -122,17 +122,11 @@ public class MainActivity extends AppCompatActivity implements SearchFragment.On
                         return true;
                     case R.id.Notification:
                         viewPager2.setCurrentItem(3);
-//                        toolbar.setTitle("Thông báo");
-//                        fragment = new NotificaionFragment();
-//                        loadFragment(fragment);
-//                        break;
+
                         return true;
                     case R.id.Profile:
                         viewPager2.setCurrentItem(4);
-//                        toolbar.setTitle("Hồ sơ");
-//                        fragment = new ProfileFragment();
-//                        loadFragment(fragment);
-//                        break;
+
                         return true;
 
 
