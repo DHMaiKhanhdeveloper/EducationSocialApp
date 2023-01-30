@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.example.SocialMedia1.Fragments.CoursesFragment;
 import com.example.SocialMedia1.Fragments.FavouriteFragment;
 import com.example.SocialMedia1.Fragments.FeedFragment;
 import com.example.SocialMedia1.Fragments.FollowingFragment;
@@ -54,12 +55,17 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if (id == R.id.following) {
+                if (id == R.id.courses) {
+                    CoursesFragment coursesFragment = new CoursesFragment();
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.frameLayout, coursesFragment);
+                    fragmentTransaction.commit();
+                }else if (id == R.id.following) {
                     FollowingFragment followingFragment = new FollowingFragment();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction.replace(R.id.frameLayout, followingFragment);
                     fragmentTransaction.commit();
-                } else if (id == R.id.feed) {
+                }  else if (id == R.id.feed) {
                     FeedFragment feedFragment = new FeedFragment();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction.replace(R.id.frameLayout, feedFragment);

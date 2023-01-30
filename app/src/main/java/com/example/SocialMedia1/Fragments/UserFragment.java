@@ -56,8 +56,8 @@ import static android.app.Activity.RESULT_OK;
 public class UserFragment extends Fragment {
 
 
-    TextView followers,following,logout;
-    Button btn_update,u_bg,settings;
+    TextView followers,following;
+    Button btn_update,u_bg,logout;
     ImageView profile;
     ImageView bg,bg_camera;
     TextView username,memer,following_count,followers_count,pos_count;
@@ -376,7 +376,7 @@ public class UserFragment extends Fragment {
                         i++;
                     }
                 }
-                pos_count.setText("Posts "+"("+i+")");
+                pos_count.setText(""+i);
             }
 
             @Override
@@ -403,7 +403,7 @@ public class UserFragment extends Fragment {
 
 
                 username.setText(n);
-                memer.setText(m);
+                memer.setText("Lớp "+m);
                 Picasso.get().load(p).placeholder(R.drawable.profile_image).into(profile);
                 Picasso.get().load(b).into(bg);
 
@@ -431,7 +431,7 @@ public class UserFragment extends Fragment {
     }
     private void init(View view)
     {
-        settings=view.findViewById(R.id.settings);
+
 
         followers=view.findViewById(R.id.followers);
         following=view.findViewById(R.id.following);

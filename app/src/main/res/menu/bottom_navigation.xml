@@ -2,21 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Following"
+        android:title="Khóa học"
+        android:icon="@drawable/elearning"
+        android:id= "@+id/courses"
+        />
+    <item
+        android:title="Theo dõi"
         android:icon="@drawable/ic_following"
         android:id="@+id/following"
         />
     <item
-        android:title="Feed"
+        android:title="Cộng đồng mạng"
         android:id="@+id/feed"
         android:icon="@drawable/ic_feed"/>
     <item
-        android:title="Favourites"
+        android:title="Yêu thích"
         android:icon="@drawable/ic_favourite"
         android:id="@+id/fav"/>
 
     <item
-        android:title="Profile"
+        android:title="Cá nhân"
         android:id="@+id/profile"
         android:icon="@drawable/ic_profile"/>
 </menu>

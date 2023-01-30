@@ -26,7 +26,7 @@
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#11CFC5</color>
 
-    <color name="text_intro">#1DB7AE</color>
+    <color name="text_intro">#09F3E5</color>
     <color name="main_color">#EBFCFB</color>
 
 
@@ -53,6 +53,7 @@
     <color name="blue">#0824BF</color>
     <color name="green">#10C617</color>
     <color name="yellow">#F4DC04</color>
+    <color name="pink">#F33575</color>'
 
 
     <color name="colorGreen">#004827</color>

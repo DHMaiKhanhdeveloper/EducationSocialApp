@@ -55,8 +55,7 @@
         android:layout_height="100dp"
         android:background="@android:color/holo_green_dark"
         android:scaleType="centerCrop"
-        android:id="@+id/background"
-        />
+        android:id="@+id/background" />
 
 
     <ImageView
@@ -77,6 +76,7 @@
         app:cardCornerRadius="40dp"
         app:cardBackgroundColor="@android:color/holo_red_dark"
         android:layout_below="@id/background"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="-25dp"
         android:id="@+id/card"
         >
@@ -85,6 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+
             android:src="@drawable/profile_image"
             android:id="@+id/profile_image"
             />
@@ -93,104 +94,20 @@
 
     </androidx.cardview.widget.CardView>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/card"
         android:layout_below="@id/background"
         android:layout_margin="10dp"
-        android:id="@+id/relative"
-        android:gravity="center_horizontal"
-
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Following"
-            android:textColor="@android:color/black"
-            android:fontFamily="@font/montserrat"
-            android:textSize="16sp"
-            android:layout_marginStart="25dp"
-            android:id="@+id/following"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Followers"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:fontFamily="@font/montserrat"
-            android:layout_toEndOf="@id/following"
-            android:layout_marginStart="20dp"
-            android:id="@+id/followers"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="15sp"
-            android:fontFamily="@font/montserrat"
-            android:layout_below="@id/following"
-            android:layout_marginStart="60dp"
-            android:id="@+id/following_count"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:layout_toEndOf="@id/following_count"
-            android:layout_below="@id/followers"
-            android:textSize="15sp"
-            android:id="@+id/followers_count"
-            android:fontFamily="@font/montserrat"
-            android:layout_marginStart="90dp"
-            />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </RelativeLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="27sp"
-        android:layout_below="@id/relative"
-        android:layout_alignParentEnd="true"
-        android:text="settings"
-        android:layout_marginTop="5dp"
-        android:minWidth="99dp"
-        android:layout_marginEnd="75dp"
-        android:id="@+id/settings"
-        android:background="@drawable/edit"
-        android:textSize="16dp"
-        android:textColor="@android:color/white"
-        android:fontFamily="@font/montserrat"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/card"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="6dp"
-        >
+        android:id="@+id/relative"
+        android:gravity="center_horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/username"
@@ -198,7 +115,9 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/montserrat"
                 android:text="Username"
-                android:textSize="14sp" />
+                android:textColor="@color/text_intro"
+                android:textStyle="bold"
+                android:textSize="22sp" />
 
 
 
@@ -206,71 +125,178 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Memer name"
-                android:textSize="14sp"
+                android:text="Lớp"
+                android:textStyle="italic"
+                android:textColor="@color/teal_200"
+                android:textSize="18sp"
                 android:fontFamily="@font/montserrat"
                 android:id="@+id/memer"
                 />
 
 
-
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/montserrat"
-            android:textColor="@android:color/holo_red_dark"
-            android:id="@+id/logout"/>
-
-
-
-
-
-
-
-
-
-
-
-
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="6dp">
+
+
+        <LinearLayout
+            android:id="@+id/countLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/following_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="@string/following"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/following"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followers_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="@string/followers"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/followers"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/posts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="@string/posts"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/countLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/background_patientp1"
+                android:minWidth="160dp"
+                android:text="Thoát"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
 
     <RelativeLayout
+        android:id="@+id/relative1"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_centerInParent="true"
-        android:id="@+id/relative1"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/edittext">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Posts (24)"
-            android:fontFamily="@font/montserrat"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="3dp"
-            android:textColor="@android:color/black"
-            android:id="@+id/posts"/>
-
-
-
-
-
-
-
+            android:text="Các bài đăng"
+            android:layout_centerInParent="true"
+            android:textSize="15dp"/>
 
 
 
