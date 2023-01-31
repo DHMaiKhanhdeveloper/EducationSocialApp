@@ -12,7 +12,7 @@
         android:id="@+id/following"
         />
     <item
-        android:title="Cộng đồng mạng"
+        android:title="Cộng đồng chung"
         android:id="@+id/feed"
         android:icon="@drawable/ic_feed"/>
     <item

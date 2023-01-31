@@ -46,11 +46,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

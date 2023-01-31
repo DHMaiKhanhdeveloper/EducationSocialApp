@@ -67,7 +67,7 @@ public class CommentActivity extends AppCompatActivity {
         no=findViewById(R.id.no);
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // trở về
 
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();

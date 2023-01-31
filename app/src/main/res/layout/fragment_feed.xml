@@ -29,7 +29,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Feed"
+                    android:text="Cộng đồng chung"
                     android:textSize="19sp"
                     android:fontFamily="@font/montserrat"
                     android:textColor="@android:color/black"
