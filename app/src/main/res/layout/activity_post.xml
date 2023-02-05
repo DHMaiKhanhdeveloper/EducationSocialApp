@@ -96,4 +96,21 @@
        android:inputType="text"
        />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_below="@id/post_description"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="20dp"
+        android:hint="Liên quan môn gì?"
+        android:textColor="@android:color/black"
+        android:id="@+id/post_courses"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="text"
+        />
+
 </RelativeLayout>

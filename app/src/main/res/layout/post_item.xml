@@ -49,7 +49,20 @@
            android:src="@drawable/ic_options"
            android:layout_alignParentEnd="true"
            android:layout_centerVertical="true"
+           android:layout_marginLeft="20dp"
            android:id="@+id/options"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Courses"
+           android:fontFamily="@font/montserrat"
+           android:layout_toStartOf="@+id/options"
+           android:layout_centerVertical="true"
+           android:layout_marginStart="4dp"
+           android:id="@+id/courses"
+           android:textColor="@android:color/black"
+           />
 
    </RelativeLayout>
 
