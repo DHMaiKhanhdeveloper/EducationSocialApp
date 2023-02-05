@@ -77,7 +77,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
         holder.date.setText(list.getDate());
         holder.username.setText(list.getUsername());
-        holder.memer.setText(list.getMemer());
+        holder.memer.setText("Lớp "+list.getMemer());
         Picasso.get().load(list.getProfile()).placeholder(R.drawable.profile_image).into(holder.profile);
 
         if (list.getDescription().isEmpty())
