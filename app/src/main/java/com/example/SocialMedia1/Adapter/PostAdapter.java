@@ -1,7 +1,9 @@
 package com.example.SocialMedia1.Adapter;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -137,20 +139,57 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                                 return true;
 
                             case R.id.report:
-                                FirebaseDatabase.getInstance().getReference().child("Posts")
-                                        .child(list.getPostid()).removeValue()
-                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task) {
-                                                if (task.isSuccessful())
-                                                {
-                                                    Toast.makeText(context, "Deleted!", Toast.LENGTH_SHORT).show();
-                                                }else
-                                                {
-                                                    Toast.makeText(context, "Unable to delete", Toast.LENGTH_SHORT).show();
-                                                }
-                                            }
-                                        });
+
+
+//                                return true;
+                                final Drawable positiveIcon = context.getResources().getDrawable(R.drawable.accept);
+                                final Drawable negativeIcon = context.getResources().getDrawable(R.drawable.cancel);
+
+                                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+                                builder.setTitle("Xác nhận").setMessage("Bạn có muốn chặn bài viết này");
+                                builder.setCancelable(true);
+                                builder.setIcon(R.drawable.newpost);
+
+                                // Create "Yes" button with OnClickListener.
+                                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        Toast.makeText(context,"You choose Yes button",
+                                                Toast.LENGTH_SHORT).show();
+
+                                        FirebaseDatabase.getInstance().getReference().child("Posts")
+                                                .child(list.getPostid()).removeValue()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        if (task.isSuccessful())
+                                                        {
+                                                            Toast.makeText(context, "Deleted!", Toast.LENGTH_SHORT).show();
+                                                        }else
+                                                        {
+                                                            Toast.makeText(context, "Unable to delete", Toast.LENGTH_SHORT).show();
+                                                        }
+                                                    }
+                                                });
+
+                                    }
+                                }).setIcon(positiveIcon);
+
+
+                                // Create "No" button with OnClickListener.
+                                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        Toast.makeText(context,"You choose No button",
+                                                Toast.LENGTH_SHORT).show();
+                                        //  Cancel
+                                        dialog.cancel();
+                                    }
+                                }).setIcon(negativeIcon);
+
+
+                                // Create AlertDialog:
+                                AlertDialog alert = builder.create();
+                                alert.show();
 
                                 return true;
                         }
