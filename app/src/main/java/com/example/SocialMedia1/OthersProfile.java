@@ -199,7 +199,7 @@ public class OthersProfile extends AppCompatActivity {
 
 
                 username.setText(n);
-                memer.setText(m);
+                memer.setText("Lớp "+m);
                 Picasso.get().load(p).placeholder(R.drawable.profile_image).into(profile);
                 Picasso.get().load(b).into(bg);
 
@@ -261,7 +261,7 @@ public class OthersProfile extends AppCompatActivity {
                         i++;
                     }
                 }
-                pos_count.setText("Posts "+"("+i+")");
+                pos_count.setText(""+i);
             }
 
             @Override

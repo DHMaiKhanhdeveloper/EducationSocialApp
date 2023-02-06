@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
-        android:title="Copy link"
-        android:id="@+id/copy"/>
-    <item
-        android:title="Delete post"
+        android:title="Xóa bài viết"
         android:id="@+id/delete"/>
     <item
-        android:title="Unfollow"
+        android:title="Không theo dõi"
         android:id="@+id/unfollow"/>
     <item
-        android:title="Report"
+        android:title="Báo cáo bài viết không phù hợp"
         android:id="@+id/report"/>
 
 

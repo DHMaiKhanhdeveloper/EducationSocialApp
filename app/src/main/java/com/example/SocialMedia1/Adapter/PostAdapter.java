@@ -107,9 +107,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId())
                         {
-                            case R.id.copy:
 
-                                return true;
                             case R.id.delete:
                                 FirebaseDatabase.getInstance().getReference().child("Posts")
                                         .child(list.getPostid()).removeValue()
@@ -136,6 +134,24 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                                 FirebaseDatabase.getInstance().getReference().child("Follow")
                                         .child(list.getPublisher())
                                         .child("followers").child(user.getUid()).removeValue();
+                                return true;
+
+                            case R.id.report:
+                                FirebaseDatabase.getInstance().getReference().child("Posts")
+                                        .child(list.getPostid()).removeValue()
+                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                if (task.isSuccessful())
+                                                {
+                                                    Toast.makeText(context, "Deleted!", Toast.LENGTH_SHORT).show();
+                                                }else
+                                                {
+                                                    Toast.makeText(context, "Unable to delete", Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                        });
+
                                 return true;
                         }
                         return true;
