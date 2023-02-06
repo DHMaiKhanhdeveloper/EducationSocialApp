@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:title="Khóa học"
-        android:icon="@drawable/elearning"
-        android:id= "@+id/courses"
-        />
-    <item
-        android:title="Theo dõi"
-        android:icon="@drawable/ic_following"
-        android:id="@+id/following"
-        />
+<!--    <item-->
+<!--        android:title="Khóa học"-->
+<!--        android:icon="@drawable/elearning"-->
+<!--        android:id= "@+id/courses"-->
+<!--        />-->
+
     <item
         android:title="Cộng đồng chung"
         android:id="@+id/feed"
-        android:icon="@drawable/ic_feed"/>
+        android:icon="@drawable/selector_community"/>
+
+    <item
+        android:title="Theo dõi"
+        android:icon="@drawable/selector_follow"
+        android:id="@+id/following"
+        />
+
     <item
         android:title="Yêu thích"
-        android:icon="@drawable/ic_favourite"
+        android:icon="@drawable/selector_love"
         android:id="@+id/fav"/>
 
     <item
         android:title="Cá nhân"
         android:id="@+id/profile"
-        android:icon="@drawable/ic_profile"/>
+        android:icon="@drawable/selector_profile"/>
 </menu>

@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                                 HashMap<String,Object> map=new HashMap<>();
                                 map.put("username",n);
                                 map.put("user_id",user.getUid());
-                                map.put("memer","@"+m);
+                                map.put("memer",m);
                                 map.put("email",e);
                                 map.put("profileUrl",profile);
                                 map.put("background",url);

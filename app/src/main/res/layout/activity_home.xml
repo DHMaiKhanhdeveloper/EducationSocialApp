@@ -5,17 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/relative"
-    tools:context="com.example.SocialMedia1.HomeActivity">
+    tools:context="com.example.SocialMedia1.activity.HomeActivity">
 
 
-    <FrameLayout
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/frameLayout"-->
+<!--        android:layout_above="@id/bottom_nav"-->
+
+<!--      >-->
+<!--    </FrameLayout>-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frameLayout"
-        android:layout_above="@id/bottom_nav"
+        android:layout_above="@+id/bottom_nav">
 
-      >
-    </FrameLayout>
+    </androidx.viewpager2.widget.ViewPager2>
 
 
 
@@ -25,11 +32,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:background="@android:color/white"
-        app:itemIconTint="#1f97b8"
-        app:itemTextColor="#1f97b8"
+        android:background="#88EDE3"
+
+        app:itemTextColor="#D58817"
         app:menu="@menu/bottom_navigation"
-        app:itemRippleColor="#1f97b8"
+        app:itemRippleColor="#F36A3E"
         android:id="@+id/bottom_nav"
 
         />
