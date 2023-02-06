@@ -78,6 +78,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         holder.date.setText(list.getDate());
         holder.username.setText(list.getUsername());
         holder.memer.setText("Lớp "+list.getMemer());
+        holder.courses.setText(list.getCourses());
         Picasso.get().load(list.getProfile()).placeholder(R.drawable.profile_image).into(holder.profile);
 
         if (list.getDescription().isEmpty())
@@ -281,7 +282,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         CircleImageView profile;
         ImageView post_image,options;
         ImageView like,liked,comment,share,save,saved;
-        TextView username,date,likes_count,comments_count;
+        TextView username,date,likes_count,comments_count,courses;
         TextView memer,description;
         ProgressDialog pd;
 
@@ -305,6 +306,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             comments_count=itemView.findViewById(R.id.comments_count);
             memer=itemView.findViewById(R.id.memer);
             description=itemView.findViewById(R.id.description);
+            courses =itemView.findViewById(R.id.courses);
             pd=new ProgressDialog(context);
 
 

@@ -57,7 +57,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         Data data = dataList.get(position);
 
         holder.username.setText(data.getUsername());
-        holder.memer.setText(data.getMemer());
+        holder.memer.setText("Lớp "+data.getMemer());
         Glide.with(context).load(data.getProfileUrl()).centerCrop().placeholder(R.drawable.profile_image).into(holder.profile);
 
 

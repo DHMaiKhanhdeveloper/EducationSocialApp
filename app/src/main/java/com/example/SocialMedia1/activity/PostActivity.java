@@ -43,7 +43,7 @@ import SocialMedia1.R;
 public class PostActivity extends AppCompatActivity {
     ImageView cancel,pick_image;
     TextView post;
-    EditText description;
+    EditText description,description_courses ;
     CardView post_card;
     ProgressDialog progressDialog;
 
@@ -187,7 +187,7 @@ public class PostActivity extends AppCompatActivity {
         pick_image=findViewById(R.id.pick);
         post_card=findViewById(R.id.post_card);
         description=findViewById(R.id.post_description);
-
+        description_courses =findViewById(R.id.post_courses);
     }
 
     public String fileExtension(Uri uri)
@@ -257,6 +257,7 @@ public class PostActivity extends AppCompatActivity {
                     map.put("postid",postid);
                     map.put("postImage",url);
                     map.put("description",description.getText().toString());
+                    map.put("courses",description_courses.getText().toString());
                     map.put("publisher",user.getUid());
                     map.put("profile",p);
                     map.put("memer",m);

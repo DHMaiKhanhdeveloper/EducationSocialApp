@@ -61,8 +61,7 @@
            android:layout_centerVertical="true"
            android:layout_marginStart="4dp"
            android:id="@+id/courses"
-           android:textColor="@android:color/black"
-           />
+           android:textColor="@android:color/black" />
 
    </RelativeLayout>
 
