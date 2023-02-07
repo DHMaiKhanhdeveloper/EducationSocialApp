@@ -6,17 +6,15 @@
 <!--        android:icon="@drawable/elearning"-->
 <!--        android:id= "@+id/courses"-->
 <!--        />-->
-
-    <item
-        android:title="Cộng đồng chung"
-        android:id="@+id/feed"
-        android:icon="@drawable/selector_community"/>
-
     <item
         android:title="Theo dõi"
         android:icon="@drawable/selector_follow"
         android:id="@+id/following"
         />
+    <item
+        android:title="Học tập chung"
+        android:id="@+id/feed"
+        android:icon="@drawable/selector_community"/>
 
     <item
         android:title="Yêu thích"

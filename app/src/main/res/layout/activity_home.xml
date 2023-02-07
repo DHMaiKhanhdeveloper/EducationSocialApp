@@ -8,23 +8,14 @@
     tools:context="com.example.SocialMedia1.activity.HomeActivity">
 
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/frameLayout"-->
-<!--        android:layout_above="@id/bottom_nav"-->
-
-<!--      >-->
-<!--    </FrameLayout>-->
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/main_view_pager"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_nav">
+        android:id="@+id/frameLayout"
+        android:layout_above="@id/bottom_nav"
 
-    </androidx.viewpager2.widget.ViewPager2>
-
-
+      >
+    </FrameLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

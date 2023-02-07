@@ -34,15 +34,16 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new FeedFragment();
-            case 1:
                 return new FollowingFragment();
+            case 1:
+                return new FeedFragment();
             case 2:
                 return new FavouriteFragment();
             case 3:
                 return new UserFragment();
+
             default:
-                return new FeedFragment();
+                return new FollowingFragment();
         }
     }
 

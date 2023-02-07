@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yêu thích"
+                    android:text="Lưu Các Bài Viết Yêu thích"
                     android:id="@+id/title"
                     android:textSize="19sp"
                     android:fontFamily="@font/montserrat"
